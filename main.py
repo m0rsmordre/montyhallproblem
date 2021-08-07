@@ -4,8 +4,8 @@ def deneme(kapilari_degis, kapilar=3):
     secilen_kapi = random.randint(1, kapilar)
     if kapilari_degis:
         gosterilen_kapi = 3 if secilen_kapi==2 else 2
-        mevcu_kapilar = [x for x in range(1,kapilar+1) if x not in (secilen_kapi, gosterilen_kapi)]
-        secilen_kapi = random.choice(mevcu_kapilar)
+        mevcut_kapilar = [x for x in range(1,kapilar+1) if x not in (secilen_kapi, gosterilen_kapi)]
+        secilen_kapi = random.choice(mevcut_kapilar)
     return secilen_kapi == 1
 
 def deneme2(deneme_sayisi, kapilari_degis, kapilar=3):
